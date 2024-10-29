@@ -1,0 +1,11 @@
+<hi> Adicionar Tarefa </h1>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder= "Título de tarefa">
+        <button type="submit">Adicionar</button>
+    </form>
+    
+    <a href="{% url 'task_list' %}">Voltar para lista</a>
+    
+    </body>
+    </html>
